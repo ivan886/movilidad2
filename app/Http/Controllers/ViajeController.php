@@ -14,10 +14,7 @@ use DB;
 class ViajeController extends Controller
 {
     
-    public function info(Request $request){
-           Storage::disk('local')->append('log',"imei ".$request->imei ."  tiempo ". $request->tiempo);
-    
-    }
+   
     
     public function store(Request $request){
         //Storage::disk('local')->append('log',"imei ".$request->imei ."  tiempo ". $request->tiempo);
